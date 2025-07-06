@@ -1,0 +1,452 @@
+[
+  {
+    "name": "Stand-alone zero-defect policy",
+    "imgUrl": "https://via.placeholder.com/150?text=Eco+Product+1",
+    "product_category": "Beverage",
+    "product_sub_category": "Can",
+    "product_carbon_footprint": 239.92,
+    "price": 42.67,
+    "description": "None painting while. Political month out president computer wind."
+  },
+  {
+    "name": "Configurable interactive portal",
+    "imgUrl": "https://via.placeholder.com/150?text=Eco+Product+2",
+    "product_category": "Fashion",
+    "product_sub_category": "Shoes",
+    "product_carbon_footprint": 222.31,
+    "price": 66.44,
+    "description": "To guy trip range affect stay. Involve power benefit radio street woman customer."
+  },
+  {
+    "name": "Centralized intangible benchmark",
+    "imgUrl": "https://via.placeholder.com/150?text=Eco+Product+3",
+    "product_category": "Beverage",
+    "product_sub_category": "Can",
+    "product_carbon_footprint": 393.39,
+    "price": 470.33,
+    "description": "Subject individual agent. Fine provide property glass production doctor bank. Scene allow want true."
+  },
+  {
+    "name": "Programmable national collaboration",
+    "imgUrl": "https://via.placeholder.com/150?text=Eco+Product+5",
+    "product_category": "Food",
+    "product_sub_category": "Vegetable",
+    "product_carbon_footprint": 146.03,
+    "price": 443.7,
+    "description": "Oil best response them give dream teach. Red side word travel. One real everybody issue we.\nSenior alone apply feel."
+  },
+  {
+    "name": "Business-focused non-volatile interface",
+    "imgUrl": "https://via.placeholder.com/150?text=Eco+Product+1",
+    "product_category": "Food",
+    "product_sub_category": "Vegetable",
+    "product_carbon_footprint": 84.71,
+    "price": 469.77,
+    "description": "After conference blood price computer without.\nAffect quite such kind everyone. Guess lot politics away. Short way know."
+  },
+  {
+    "name": "Realigned interactive projection",
+    "imgUrl": "https://via.placeholder.com/150?text=Eco+Product+1",
+    "product_category": "Stationery",
+    "product_sub_category": "Eraser",
+    "product_carbon_footprint": 56.08,
+    "price": 16.18,
+    "description": "Stand great almost only apply. Class available sport magazine seek get her."
+  },
+  {
+    "name": "Reduced neutral conglomeration",
+    "imgUrl": "https://via.placeholder.com/150?text=Eco+Product+1",
+    "product_category": "Beverage",
+    "product_sub_category": "Can",
+    "product_carbon_footprint": 309.8,
+    "price": 323.2,
+    "description": "Defense memory subject visit state try. Behavior may eye data."
+  },
+  {
+    "name": "Open-architected object-oriented Local Area Network",
+    "imgUrl": "https://via.placeholder.com/150?text=Eco+Product+2",
+    "product_category": "Beverage",
+    "product_sub_category": "Can",
+    "product_carbon_footprint": 226.47,
+    "price": 425.05,
+    "description": "Word even tell wall behind race. Personal must indeed everything rise environmental. Scientist for news. Ability job effect expect big find."
+  },
+  {
+    "name": "Ameliorated multimedia application",
+    "imgUrl": "https://via.placeholder.com/150?text=Eco+Product+3",
+    "product_category": "Fashion",
+    "product_sub_category": "T-Shirt",
+    "product_carbon_footprint": 313.02,
+    "price": 224.83,
+    "description": "Argue campaign notice after. Agree road rich. Really drive word cut."
+  },
+  {
+    "name": "Progressive coherent customer loyalty",
+    "imgUrl": "https://via.placeholder.com/150?text=Eco+Product+4",
+    "product_category": "Electronics",
+    "product_sub_category": "Charger",
+    "product_carbon_footprint": 113.28,
+    "price": 460.94,
+    "description": "Security become really. Occur civil property travel occur. Less reality professional that."
+  },
+  {
+    "name": "Assimilated value-added customer loyalty",
+    "imgUrl": "https://via.placeholder.com/150?text=Eco+Product+3",
+    "product_category": "Home",
+    "product_sub_category": "Lamp",
+    "product_carbon_footprint": 69.63,
+    "price": 117.78,
+    "description": "Her could behavior garden. Paper common relationship social plant.\nLong significant federal share. Media land admit help."
+  },
+  {
+    "name": "Universal high-level attitude",
+    "imgUrl": "https://via.placeholder.com/150?text=Eco+Product+1",
+    "product_category": "Food",
+    "product_sub_category": "Fruit",
+    "product_carbon_footprint": 153.2,
+    "price": 267.59,
+    "description": "Develop three sister story idea. About hair record fund start. If step hospital option anyone."
+  },
+  {
+    "name": "Extended interactive extranet",
+    "imgUrl": "https://via.placeholder.com/150?text=Eco+Product+5",
+    "product_category": "Electronics",
+    "product_sub_category": "Battery",
+    "product_carbon_footprint": 319.87,
+    "price": 278.36,
+    "description": "Push across imagine level cut inside. Boy industry admit employee establish reach shake participant."
+  },
+  {
+    "name": "Business-focused motivating website",
+    "imgUrl": "https://via.placeholder.com/150?text=Eco+Product+4",
+    "product_category": "Fashion",
+    "product_sub_category": "T-Shirt",
+    "product_carbon_footprint": 367.0,
+    "price": 107.34,
+    "description": "Imagine central ok why. Page common go what.\nWhy statement although while claim ground."
+  },
+  {
+    "name": "Secured holistic capacity",
+    "imgUrl": "https://via.placeholder.com/150?text=Eco+Product+4",
+    "product_category": "Beverage",
+    "product_sub_category": "Bottle",
+    "product_carbon_footprint": 197.52,
+    "price": 269.96,
+    "description": "Enough produce detail radio fund task training enough. For large approach thank whole. International agency size whom."
+  },
+  {
+    "name": "Multi-channeled explicit benchmark",
+    "imgUrl": "https://via.placeholder.com/150?text=Eco+Product+5",
+    "product_category": "Fashion",
+    "product_sub_category": "T-Shirt",
+    "product_carbon_footprint": 472.03,
+    "price": 117.26,
+    "description": "Argue new expert activity. Always different president store take. Media happy rest serious hour than course."
+  },
+  {
+    "name": "Integrated didactic groupware",
+    "imgUrl": "https://via.placeholder.com/150?text=Eco+Product+4",
+    "product_category": "Beverage",
+    "product_sub_category": "Bottle",
+    "product_carbon_footprint": 190.89,
+    "price": 327.8,
+    "description": "New protect word road budget unit cause. Probably each choice per author agent my. Reason enjoy study black."
+  },
+  {
+    "name": "Innovative modular circuit",
+    "imgUrl": "https://via.placeholder.com/150?text=Eco+Product+2",
+    "product_category": "Beverage",
+    "product_sub_category": "Bottle",
+    "product_carbon_footprint": 438.31,
+    "price": 292.98,
+    "description": "Scene suggest third middle under small. Determine require impact those the we."
+  },
+  {
+    "name": "De-engineered incremental knowledge user",
+    "imgUrl": "https://via.placeholder.com/150?text=Eco+Product+1",
+    "product_category": "Beverage",
+    "product_sub_category": "Can",
+    "product_carbon_footprint": 400.69,
+    "price": 88.93,
+    "description": "Nothing company city stand community miss explain message. Yeah several phone news tend."
+  },
+  {
+    "name": "Managed tertiary extranet",
+    "imgUrl": "https://via.placeholder.com/150?text=Eco+Product+4",
+    "product_category": "Food",
+    "product_sub_category": "Fruit",
+    "product_carbon_footprint": 176.52,
+    "price": 489.5,
+    "description": "Music seven do no voice. Eye teacher probably debate end lose some."
+  },
+  {
+    "name": "Focused real-time focus group",
+    "imgUrl": "https://via.placeholder.com/150?text=Eco+Product+3",
+    "product_category": "Electronics",
+    "product_sub_category": "Charger",
+    "product_carbon_footprint": 293.3,
+    "price": 10.42,
+    "description": "No ability available ability. Admit few center development by growth human."
+  },
+  {
+    "name": "Ergonomic eco-centric standardization",
+    "imgUrl": "https://via.placeholder.com/150?text=Eco+Product+2",
+    "product_category": "Beverage",
+    "product_sub_category": "Carton",
+    "product_carbon_footprint": 201.61,
+    "price": 243.91,
+    "description": "Region will alone visit participant site section. Cold protect relate. All such food."
+  },
+  {
+    "name": "Re-contextualized motivating budgetary management",
+    "imgUrl": "https://via.placeholder.com/150?text=Eco+Product+5",
+    "product_category": "Fashion",
+    "product_sub_category": "T-Shirt",
+    "product_carbon_footprint": 452.88,
+    "price": 454.89,
+    "description": "Here six listen tough future even word decision. Feel upon head contain build deep real. Relationship mother explain sense without Democrat idea."
+  },
+  {
+    "name": "Advanced scalable functionalities",
+    "imgUrl": "https://via.placeholder.com/150?text=Eco+Product+5",
+    "product_category": "Beverage",
+    "product_sub_category": "Bottle",
+    "product_carbon_footprint": 414.8,
+    "price": 365.38,
+    "description": "Place street know yard receive. Experience speak wonder contain. Least suffer election person big. Foot cold camera provide month night quality five."
+  },
+  {
+    "name": "Future-proofed content-based encryption",
+    "imgUrl": "https://via.placeholder.com/150?text=Eco+Product+5",
+    "product_category": "Electronics",
+    "product_sub_category": "Charger",
+    "product_carbon_footprint": 409.65,
+    "price": 210.53,
+    "description": "Guess those job. Former simple enjoy one toward should society might. Music employee size part modern."
+  },
+  {
+    "name": "Multi-layered fault-tolerant customer loyalty",
+    "imgUrl": "https://via.placeholder.com/150?text=Eco+Product+1",
+    "product_category": "Electronics",
+    "product_sub_category": "Battery",
+    "product_carbon_footprint": 384.37,
+    "price": 146.94,
+    "description": "Generation every sport out. Land animal account be pay teach finish car. Dinner ball sense prepare hot."
+  },
+  {
+    "name": "Self-enabling intermediate algorithm",
+    "imgUrl": "https://via.placeholder.com/150?text=Eco+Product+5",
+    "product_category": "Food",
+    "product_sub_category": "Vegetable",
+    "product_carbon_footprint": 339.22,
+    "price": 492.28,
+    "description": "Sit simple bag piece tough buy final. Same time animal side later ready ten staff. Discuss myself protect serve project happen."
+  },
+  {
+    "name": "User-friendly secondary Graphic Interface",
+    "imgUrl": "https://via.placeholder.com/150?text=Eco+Product+3",
+    "product_category": "Beverage",
+    "product_sub_category": "Bottle",
+    "product_carbon_footprint": 106.47,
+    "price": 105.05,
+    "description": "Board history buy relationship around his. Important stand final weight."
+  },
+  {
+    "name": "Face-to-face content-based alliance",
+    "imgUrl": "https://via.placeholder.com/150?text=Eco+Product+1",
+    "product_category": "Food",
+    "product_sub_category": "Fruit",
+    "product_carbon_footprint": 124.57,
+    "price": 197.2,
+    "description": "Seat force agree trade need until. Consider amount same clearly hope a surface trip."
+  },
+  {
+    "name": "Enterprise-wide impactful implementation",
+    "imgUrl": "https://via.placeholder.com/150?text=Eco+Product+2",
+    "product_category": "Electronics",
+    "product_sub_category": "Battery",
+    "product_carbon_footprint": 201.33,
+    "price": 341.83,
+    "description": "Picture unit hour anyone. Check crime girl several thought. Account score challenge drop southern actually."
+  },
+  {
+    "name": "Team-oriented intermediate instruction set",
+    "imgUrl": "https://via.placeholder.com/150?text=Eco+Product+3",
+    "product_category": "Electronics",
+    "product_sub_category": "Charger",
+    "product_carbon_footprint": 206.49,
+    "price": 109.84,
+    "description": "Growth history before turn age. Travel allow both whole science little. Resource environment none network effort eat."
+  },
+  {
+    "name": "Integrated full-range encoding",
+    "imgUrl": "https://via.placeholder.com/150?text=Eco+Product+4",
+    "product_category": "Food",
+    "product_sub_category": "Snack",
+    "product_carbon_footprint": 111.94,
+    "price": 402.12,
+    "description": "Small fill interesting specific. Base physical song never now evidence realize. Score support hope should street cover."
+  },
+  {
+    "name": "Synergistic content-based algorithm",
+    "imgUrl": "https://via.placeholder.com/150?text=Eco+Product+3",
+    "product_category": "Stationery",
+    "product_sub_category": "Eraser",
+    "product_carbon_footprint": 431.74,
+    "price": 493.07,
+    "description": "Already image surface feeling home involve. Create suggest she top. Back right life appear morning executive a."
+  },
+  {
+    "name": "Reverse-engineered systemic hub",
+    "imgUrl": "https://via.placeholder.com/150?text=Eco+Product+2",
+    "product_category": "Electronics",
+    "product_sub_category": "Battery",
+    "product_carbon_footprint": 370.7,
+    "price": 491.86,
+    "description": "Project music magazine around particular those right. Card hospital science like. Thus wonder on authority produce follow someone."
+  },
+  {
+    "name": "Operative analyzing moratorium",
+    "imgUrl": "https://via.placeholder.com/150?text=Eco+Product+1",
+    "product_category": "Food",
+    "product_sub_category": "Fruit",
+    "product_carbon_footprint": 205.95,
+    "price": 440.07,
+    "description": "Way maybe budget attack draw local nature. Product lose enter. Himself site area hair onto green popular."
+  },
+  {
+    "name": "Triple-buffered responsive middleware",
+    "imgUrl": "https://via.placeholder.com/150?text=Eco+Product+5",
+    "product_category": "Electronics",
+    "product_sub_category": "Battery",
+    "product_carbon_footprint": 125.41,
+    "price": 238.07,
+    "description": "She oil water I whole heavy push. Woman into special receive training."
+  },
+  {
+    "name": "Open-architected analyzing budgetary management",
+    "imgUrl": "https://via.placeholder.com/150?text=Eco+Product+3",
+    "product_category": "Fashion",
+    "product_sub_category": "T-Shirt",
+    "product_carbon_footprint": 140.43,
+    "price": 145.9,
+    "description": "Age time short create deal else citizen. Agree total particularly situation late expert."
+  },
+  {
+    "name": "Focused executive secured line",
+    "imgUrl": "https://via.placeholder.com/150?text=Eco+Product+3",
+    "product_category": "Stationery",
+    "product_sub_category": "Eraser",
+    "product_carbon_footprint": 283.97,
+    "price": 311.66,
+    "description": "Whose standard popular result deep. Line list world case key. Court perhaps phone democratic."
+  },
+  {
+    "name": "Self-enabling homogeneous archive",
+    "imgUrl": "https://via.placeholder.com/150?text=Eco+Product+1",
+    "product_category": "Stationery",
+    "product_sub_category": "Notebook",
+    "product_carbon_footprint": 140.85,
+    "price": 469.12,
+    "description": "Edge meet force meet the beat inside. Ago above production in significant because official."
+  },
+  {
+    "name": "Public-key tangible process improvement",
+    "imgUrl": "https://via.placeholder.com/150?text=Eco+Product+5",
+    "product_category": "Beverage",
+    "product_sub_category": "Can",
+    "product_carbon_footprint": 248.91,
+    "price": 29.74,
+    "description": "Another hit market speech seat somebody start. Education bank movement level can."
+  },
+  {
+    "name": "Exclusive dynamic budgetary management",
+    "imgUrl": "https://via.placeholder.com/150?text=Eco+Product+4",
+    "product_category": "Electronics",
+    "product_sub_category": "Phone",
+    "product_carbon_footprint": 324.43,
+    "price": 86.3,
+    "description": "Cell after join church development interview. Final drop matter sense TV throw. North quality suggest know."
+  },
+  {
+    "name": "Grass-roots neutral ability",
+    "imgUrl": "https://via.placeholder.com/150?text=Eco+Product+3",
+    "product_category": "Food",
+    "product_sub_category": "Vegetable",
+    "product_carbon_footprint": 374.84,
+    "price": 488.02,
+    "description": "Another rich read court. Senior father half serve spend board tax about. Significant will early. Store experience among this."
+  },
+  {
+    "name": "Exclusive high-level functionalities",
+    "imgUrl": "https://via.placeholder.com/150?text=Eco+Product+5",
+    "product_category": "Beverage",
+    "product_sub_category": "Bottle",
+    "product_carbon_footprint": 220.06,
+    "price": 292.07,
+    "description": "Day meeting sea pass. Detail maybe exactly fast important rock. Listen relate me quite."
+  },
+  {
+    "name": "Stand-alone solution-oriented productivity",
+    "imgUrl": "https://via.placeholder.com/150?text=Eco+Product+3",
+    "product_category": "Food",
+    "product_sub_category": "Vegetable",
+    "product_carbon_footprint": 247.27,
+    "price": 255.5,
+    "description": "Spend article hour front worker head."
+  },
+  {
+    "name": "Monitored mobile conglomeration",
+    "imgUrl": "https://via.placeholder.com/150?text=Eco+Product+4",
+    "product_category": "Food",
+    "product_sub_category": "Snack",
+    "product_carbon_footprint": 244.51,
+    "price": 218.22,
+    "description": "Top write memory simply side current nation."
+  },
+  {
+    "name": "Re-contextualized client-server initiative",
+    "imgUrl": "https://via.placeholder.com/150?text=Eco+Product+5",
+    "product_category": "Food",
+    "product_sub_category": "Packaged",
+    "product_carbon_footprint": 346.63,
+    "price": 13.35,
+    "description": "Together attorney professor election. Option reduce hand by."
+  },
+  {
+    "name": "Reactive next generation database",
+    "imgUrl": "https://via.placeholder.com/150?text=Eco+Product+2",
+    "product_category": "Home",
+    "product_sub_category": "Lamp",
+    "product_carbon_footprint": 316.63,
+    "price": 455.79,
+    "description": "Radio though third tell use. Sit so door serve same people. Hand somebody instead wife job."
+  },
+  {
+    "name": "Reduced intangible installation",
+    "imgUrl": "https://via.placeholder.com/150?text=Eco+Product+4",
+    "product_category": "Home",
+    "product_sub_category": "Lamp",
+    "product_carbon_footprint": 50.42,
+    "price": 486.65,
+    "description": "Trouble body quite week little serious return. Everybody cup choose opportunity thus. Sometimes include final wonder."
+  },
+  {
+    "name": "Advanced bandwidth-monitored synergy",
+    "imgUrl": "https://via.placeholder.com/150?text=Eco+Product+5",
+    "product_category": "Electronics",
+    "product_sub_category": "Phone",
+    "product_carbon_footprint": 465.51,
+    "price": 179.94,
+    "description": "Five system prove try development. Else water machine current create. Better conference so."
+  },
+  {
+    "name": "Total contextually-based circuit",
+    "imgUrl": "https://via.placeholder.com/150?text=Eco+Product+1",
+    "product_category": "Food",
+    "product_sub_category": "Fruit",
+    "product_carbon_footprint": 482.26,
+    "price": 89.29,
+    "description": "Ball truth do wish white break. Practice week operation after stock.\nCup theory those right shake reduce cost. Back several why fill. From less deal."
+  }
+]
