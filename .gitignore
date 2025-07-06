@@ -1,0 +1,11 @@
+#Avoid inluding node module files to stagiing area. 
+
+node_modules/
+
+# Avoid .env config files. 
+
+.env
+
+.vscode/
+
+*.log
