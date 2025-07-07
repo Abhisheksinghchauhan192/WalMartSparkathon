@@ -3,6 +3,7 @@ const express = require("express");
 const app = express();
 const connectDB = require("./database/connection");
 const {createSession} = require("./middleware/authMiddleWare");
+const cors = require("cors");
 // connect to DB 
 connectDB();
 
@@ -16,6 +17,7 @@ const authRoute = require("./routes/authRoutes");
 // parse data.. 
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
+app.use(cors());
 
 // session middleware
 app.use(createSession);
