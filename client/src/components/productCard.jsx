@@ -19,7 +19,7 @@ const ProductCard = ({ product, addToCart }) => {
       <p className="text-gray-500 text-sm">${product.price}</p>
       <button
         onClick={() => addToCart(product)}
-        className="absolute bottom-2 left-2 bg-blue-600 text-white text-xs px-2 py-0.5 rounded 
+        className="absolute bottom-2 right-2 bg-blue-600 text-white text-xs px-2 py-0.5 rounded 
                    hover:bg-blue-700 opacity-0 translate-y-1 group-hover:opacity-100 
                    group-hover:translate-y-0 transition duration-300 ease-in-out"
       >
