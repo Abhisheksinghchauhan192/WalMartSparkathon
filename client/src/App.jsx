@@ -6,7 +6,7 @@ import { FiShoppingCart } from "react-icons/fi";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-// Components
+// Components 
 import CartDrawer from "./components/cartDrawer";
 import ProductCard from "./components/productCard";
 import CategoryTitle from "./components/categoryTitle";
