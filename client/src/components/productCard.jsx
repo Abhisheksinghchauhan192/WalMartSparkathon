@@ -8,7 +8,7 @@ const ProductCard = ({ product, addToCart, toggleWishlist, isWishlisted }) => {
   return (
     <motion.div
       {...cardHoverAnimation}
-      className="relative min-w-[200px] max-w-[200px] bg-white shadow rounded-lg p-3 flex-shrink-0 group"
+      className="relative min-w-[200px] max-w-[200px] h-[320px] bg-white shadow rounded-lg p-3 flex flex-col justify-between group"
     >
       {/* Expand Button */}
       <Link
@@ -23,30 +23,32 @@ const ProductCard = ({ product, addToCart, toggleWishlist, isWishlisted }) => {
       <img
         src={product.image}
         alt={product.name}
-        className="w-full h-36 object-contain mb-2"
+        className="w-full h-36 object-contain mb-3"
       />
 
-      <h3 className="text-sm font-semibold">{product.name}</h3>
-      <p className="text-gray-500 text-sm">${product.price}</p>
+      {/* Product Name */}
+      <h3 className="text-sm font-semibold mb-1 line-clamp-2">{product.name}</h3>
 
-      {/* Wishlist Button */}
-      <button
-        onClick={() => toggleWishlist(product)}
-        className={`absolute bottom-2 left-2 text-lg ${
-          isWishlisted ? "text-pink-600" : "text-gray-600 hover:text-pink-600"
-        }`}
-        title="Add to Wishlist"
-      >
-        <FiHeart />
-      </button>
+      {/* Price + Wishlist Icon */}
+      <div className="flex items-center justify-between mt-1">
+        <p className="text-gray-700 font-medium">${product.price}</p>
+        <button
+          onClick={() => toggleWishlist(product)}
+          className={`text-lg transition ${
+            isWishlisted ? "text-pink-600" : "text-gray-500 hover:text-pink-600"
+          }`}
+          title="Add to Wishlist"
+        >
+          <FiHeart />
+        </button>
+      </div>
 
       {/* Add to Cart Button */}
       <button
         onClick={() => addToCart(product)}
-        className="absolute bottom-2 right-2 bg-blue-600 text-white text-xs px-2 py-0.5 rounded 
-                   hover:bg-blue-700 opacity-0 group-hover:opacity-100 transition duration-300"
+        className="mt-3 bg-blue-600 text-white text-sm py-1 rounded hover:bg-blue-700 transition-opacity opacity-0 group-hover:opacity-100"
       >
-        Add
+        Add to Cart
       </button>
     </motion.div>
   );

@@ -1,31 +1,33 @@
 import React, { useState, useEffect } from "react";
-import { Routes, Route } from "react-router-dom";
-import Confetti from "react-confetti";
+import { Routes, Route, useNavigate } from "react-router-dom";
 import { useWindowSize } from "@react-hook/window-size";
-import { FiShoppingCart } from "react-icons/fi";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import axios from "axios";
 
-// Components 
-import CartDrawer from "./components/cartDrawer";
-import ProductCard from "./components/productCard";
-import CategoryTitle from "./components/categoryTitle";
-import SearchBar from "./components/search";
-import UserProfile from "./components/UserProfile";
-import Wishlist from "./components/WishList";
+import Intro from "./components/intro";
 import ProductDetail from "./components/productDetail";
+import UserDetailPage from "./components/UserDetailPage";
+import MainPage from "./components/MainPage";
+import CartPage from "./components/cartPage";
+import CheckoutPage from "./components/CheckOutPage";
+
 
 function App() {
+  const FREE_SHIPPING_THRESHOLD = 50;
+
+  const [userName, setUserName] = useState(() => localStorage.getItem("userName") || null);
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState([]);
+  const [wishlist, setWishlist] = useState([]);
+  const [savedItems, setSavedItems] = useState([]);
   const [showDrawer, setShowDrawer] = useState(false);
   const [showConfetti, setShowConfetti] = useState(false);
-  const [showFirstAddMsg, setShowFirstAddMsg] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
-  const [wishlist, setWishlist] = useState([]);
   const [showWishlistPage, setShowWishlistPage] = useState(false);
-  const [width, height] = useWindowSize();
   const [discountThreshold, setDiscountThreshold] = useState(20);
+  const [width, height] = useWindowSize();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -40,6 +42,23 @@ function App() {
     fetchProducts();
   }, []);
 
+  const handleUserContinue = (name) => {
+    localStorage.setItem("userName", name);
+    setUserName(name);
+  };
+
+  const handleLogout = () => {
+    if (window.confirm("Are you sure you want to logout?")) {
+      localStorage.removeItem("userName");
+      setUserName(null);
+      setCart([]);
+      setWishlist([]);
+      setSavedItems([]);
+    }
+  };
+
+  if (!userName) return <Intro onContinue={handleUserContinue} />;
+
   const filteredProducts = products.filter((product) =>
     product.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
     product.description?.toLowerCase().includes(searchQuery.toLowerCase())
@@ -52,49 +71,81 @@ function App() {
     return acc;
   }, {});
 
-  const addToCart = (product) => {
-    const alreadyInCart = cart.find((item) => item._id === product._id);
+  const addToCart = async (product) => {
+    const payload = {
+      userID: userName,
+      productID: product._id,
+      quantity: 1,
+    };
 
-    if (!alreadyInCart) {
-      setShowConfetti(true);
-      if (cart.length === 0) {
-        setShowFirstAddMsg(true);
-        setTimeout(() => setShowFirstAddMsg(false), 4000);
-      }
-    }
+    try {
+      const response = await fetch("http://localhost:3000/cart/add", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
 
-    setCart((prevCart) => {
-      const existing = prevCart.find((item) => item._id === product._id);
-      if (existing) {
-        toast.info("Increased quantity");
-        return prevCart.map((item) =>
-          item._id === product._id
-            ? { ...item, quantity: item.quantity + 1 }
-            : item
-        );
-      } else {
+      const data = await response.json();
+
+      if (response.ok) {
         toast.success("Added to cart");
-        return [...prevCart, { ...product, quantity: 1 }];
+        setCart((prevCart) => {
+          const existing = prevCart.find((item) => item._id === product._id);
+          if (existing) {
+            return prevCart.map((item) =>
+              item._id === product._id
+                ? { ...item, quantity: item.quantity + 1 }
+                : item
+            );
+          } else {
+            return [...prevCart, { ...product, quantity: 1 }];
+          }
+        });
+
+        setShowConfetti(true);
+        setTimeout(() => setShowConfetti(false), 2000);
+      } else {
+        toast.error(data.message || "Error adding to cart");
       }
-    });
-
-    setTimeout(() => setShowConfetti(false), 2000);
+    } catch (error) {
+      console.error("Add to cart failed:", error);
+      toast.error("Network or server error");
+    }
   };
 
-  const updateQuantity = (id, delta) => {
-    setCart((prevCart) =>
-      prevCart.map((item) =>
-        item._id === id
-          ? { ...item, quantity: Math.max(1, item.quantity + delta) }
-          : item
-      )
-    );
-    toast("Quantity updated");
+  const updateQuantity = async (productID, delta) => {
+    const endpoint = delta === 1 ? "increase" : "decrease";
+
+    try {
+      const response = await axios.put(`http://localhost:3000/cart/${endpoint}`, {
+        userID: userName,
+        productID,
+      });
+
+      if (response.status === 200) {
+        setCart(response.data.cart);
+        toast.success("Quantity updated");
+      } else {
+        toast.error("Failed to update quantity");
+      }
+    } catch (error) {
+      console.error("Error updating quantity:", error);
+      toast.error("Could not update quantity");
+    }
   };
 
-  const removeItem = (id) => {
-    setCart((prev) => prev.filter((item) => item._id !== id));
-    toast.warn("Item removed");
+  const removeItem = async (productID) => {
+    try {
+      await axios.delete("http://localhost:3000/cart/remove", {
+        data: { userID: userName, productID },
+      });
+
+      setCart((prev) => prev.filter((item) => item._id !== productID));
+      toast.warn("Item removed from cart");
+    } catch (err) {
+      console.error("Error removing item:", err);
+      toast.error("Failed to remove item");
+    }
   };
 
   const toggleWishlist = (product) => {
@@ -107,103 +158,105 @@ function App() {
     }
   };
 
+  const saveForLater = (item) => {
+    removeItem(item._id);
+    setSavedItems((prev) => [...prev, item]);
+  };
+
+  const moveToCart = (item) => {
+    setSavedItems((prev) => prev.filter((i) => i._id !== item._id));
+    addToCart(item);
+  };
+
   const totalPrice = cart.reduce(
     (total, item) => total + item.price * item.quantity,
     0
   );
 
-  const MainPage = () => (
-    <div className="p-6 bg-gray-100 min-h-screen relative">
-      {showConfetti && <Confetti width={width} height={height} />}
-
-      {showFirstAddMsg && (
-        <div className="fixed top-20 left-1/2 transform -translate-x-1/2 bg-green-100 text-green-800 px-4 py-2 rounded shadow-lg z-50">
-          You have added your first product to cart
-        </div>
-      )}
-
-      <div className="absolute top-4 left-4 z-10">
-        <UserProfile
-          onWishlistClick={() => setShowWishlistPage((prev) => !prev)}
-        />
-      </div>
-
-      <div className="absolute top-4 right-4 z-10">
-        <button
-          onClick={() => setShowDrawer(true)}
-          className="relative bg-white p-3 rounded-full shadow-md hover:shadow-lg transition"
-        >
-          <FiShoppingCart className="text-2xl text-gray-700" />
-          <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center">
-            {cart.reduce((total, item) => total + item.quantity, 0)}
-          </span>
-        </button>
-      </div>
-
-      <h1 className="text-3xl font-bold mb-6 text-center text-gray-800">
-        WalmartSparkathon
-      </h1>
-
-      <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
-
-      {showWishlistPage ? (
-        <Wishlist
-          wishlist={wishlist}
-          addToCart={addToCart}
-          toggleWishlist={toggleWishlist}
-        />
-      ) : (
-        Object.entries(grouped).map(([category, items]) => (
-          <div key={category} className="mb-10">
-            <CategoryTitle category={category} />
-            <div className="flex overflow-x-auto gap-4 pb-2">
-              {items.map((product) => (
-                <ProductCard
-                  key={product._id}
-                  product={product}
-                  addToCart={addToCart}
-                  toggleWishlist={toggleWishlist}
-                  isWishlisted={wishlist.some((w) => w._id === product._id)}
-                />
-              ))}
-            </div>
-          </div>
-        ))
-      )}
-
-      {showDrawer && (
-        <CartDrawer
-          cart={cart}
-          setShowDrawer={setShowDrawer}
-          updateQuantity={updateQuantity}
-          removeItem={removeItem}
-          totalPrice={totalPrice}
-        />
-      )}
-    </div>
-  );
-
   return (
     <>
-      {/* ✅ ToastContainer here makes toasts work globally */}
       <ToastContainer position="top-right" autoClose={1500} />
-
       <Routes>
-        <Route path="/" element={<MainPage />} />
-        <Route
-          path="/product/:id"
-          element={
-            <ProductDetail
-              products={products}
-              addToCart={addToCart}
-              toggleWishlist={toggleWishlist}
-              wishlist={wishlist}
-              discountThreshold={discountThreshold}
-              setDiscountThreshold={setDiscountThreshold}
-            />
-          }
-        />
-      </Routes>
+  <Route
+    path="/"
+    element={
+      <MainPage
+        width={width}
+        height={height}
+        userName={userName}
+        cart={cart}
+        showDrawer={showDrawer}
+        setShowDrawer={setShowDrawer}
+        showConfetti={showConfetti}
+        searchQuery={searchQuery}
+        setSearchQuery={setSearchQuery}
+        showWishlistPage={showWishlistPage}
+        setShowWishlistPage={setShowWishlistPage}
+        grouped={grouped}
+        wishlist={wishlist}
+        toggleWishlist={toggleWishlist}
+        addToCart={addToCart}
+        updateQuantity={updateQuantity}
+        removeItem={removeItem}
+        totalPrice={totalPrice}
+        handleLogout={handleLogout}
+        navigate={navigate}
+      />
+    }
+  />
+  
+  <Route
+    path="/product/:id"
+    element={
+      <ProductDetail
+        products={products}
+        addToCart={addToCart}
+        toggleWishlist={toggleWishlist}
+        wishlist={wishlist}
+        discountThreshold={discountThreshold}
+        setDiscountThreshold={setDiscountThreshold}
+      />
+    }
+  />
+
+  <Route
+    path="/cart"
+    element={
+      <CartPage
+        cart={cart}
+        updateQuantity={updateQuantity}
+        removeItem={removeItem}
+        saveForLater={saveForLater}
+        savedItems={savedItems}
+        moveToCart={moveToCart}
+        totalPrice={totalPrice}
+        freeShippingThreshold={FREE_SHIPPING_THRESHOLD}
+      />
+    }
+  />
+
+  <Route
+    path="/checkout"
+    element={
+      <CheckoutPage
+        cart={cart}
+        wishlist={wishlist}
+        toggleWishlist={toggleWishlist}
+        totalPrice={totalPrice}
+        freeShippingThreshold={FREE_SHIPPING_THRESHOLD}
+      />
+    }
+  />
+
+  <Route
+    path="/profile"
+    element={<UserDetailPage userName={userName} />}
+  />
+</Routes>
+
+
+
+
     </>
   );
 }
