@@ -4,6 +4,8 @@ const app = express();
 const connectDB = require("./database/connection");
 const {createSession} = require("./middleware/authMiddleWare");
 const cors = require("cors");
+const path = require("path");
+
 // connect to DB 
 connectDB();
 
@@ -13,6 +15,8 @@ const cartRoute = require("./routes/cartRoutes");
 const authRoute = require("./routes/authRoutes");
 
 //set up the middlewares
+app.set('view engine','ejs');
+app.set('views',path.join(__dirname,'views'));
 
 // parse data.. 
 app.use(express.urlencoded({extended:true}));

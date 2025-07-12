@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add New Product</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css
+"
+    />
+  </head>
+  <body class="bg-dark text-white">
+    <div
+      class="container vh-100 d-flex justify-content-center align-items-center"
+    >
+      <div class="card p-4 shadow bg-dark text-white" style="width: 100%; max-width: 500px">
+        <% if (query.success) { %>
+        <div id="successAlert" class="alert alert-primary">
+          ✅ Product added successfully!
+        </div>
+        <% } %> <% if (query.error) { %>
+        <div id="errorAlert" class="alert alert-danger">
+          ❌ Failed to add product. Please try again.
+        </div>
+        <% } %>
+
+        <h2 class="text-center mb-4">Add New Product</h2>
+        <form action="/products/add" method="POST">
+          <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input type="text" name="name" class="form-control" required />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Category</label>
+            <input
+              type="text"
+              name="product_category"
+              class="form-control"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Sub-Category</label>
+            <input
+              type="text"
+              name="product_sub_category"
+              class="form-control"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Carbon Footprint (g CO₂)</label>
+            <input
+              type="number"
+              name="carbonFootprint"
+              class="form-control"
+              step="0.1"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Price ($)</label>
+            <input
+              type="number"
+              name="price"
+              class="form-control"
+              step="0.01"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Description</label>
+            <textarea
+              name="description"
+              rows="3"
+              class="form-control"
+              required
+            ></textarea>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Image URL</label>
+            <input type="text" name="imgUrl" class="form-control" required />
+          </div>
+
+          <button type="submit" class="btn btn-success w-100">
+            Add Product
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      // Auto-hide alerts after 1.5 seconds
+      setTimeout(() => {
+        const successAlert = document.getElementById("successAlert");
+        const errorAlert = document.getElementById("errorAlert");
+
+        if (successAlert) successAlert.style.display = "none";
+        if (errorAlert) errorAlert.style.display = "none";
+      }, 1500); 
+    </script>
+  </body>
+</html>

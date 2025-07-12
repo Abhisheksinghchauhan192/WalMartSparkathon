@@ -243,4 +243,219 @@ router.put("/swap", async (req, res) => {
 });
 
 
+// Delete Route for the items in the cart
+// In backend/routes/cartRoutes.js
+router.delete('/remove', async (req, res) => {
+  const { userID, productID } = req.body;
+
+  try {
+    const cart = await Cart.findOne({ userID });
+    if (!cart) {
+      return res.status(404).json({ message: 'cart empty' });
+    }
+    // Filter out the product to be removed
+    cart.products = cart.products.filter(
+      (item) => item.productID.toString() !== productID
+    );
+
+    await cart.save();
+
+    // Repopulate updated cart
+    const updatedCart = await Cart.findOne({ userID }).populate('products.productID');
+
+    const userOriginalCartItems = [];
+    const suggestions = [];
+
+    for (const item of updatedCart.products) {
+      const original = item.productID;
+
+      userOriginalCartItems.push({
+        _id: original._id,
+        name: original.name,
+        price: original.price,
+        quantity: item.quantity,
+        imgUrl: original.imgUrl,
+        description: original.description,
+        carbonFootprint: original.product_carbon_footprint,
+      });
+
+      const alternatives = await Product.find({
+        product_category: original.product_category,
+        _id: { $ne: original._id },
+        product_carbon_footprint: { $lt: original.product_carbon_footprint },
+      })
+        .sort({ product_carbon_footprint: 1 })
+        .limit(2);
+
+      const productSuggestions = [];
+
+      for (const suggested of alternatives) {
+        const percentReduction = Math.round(
+          ((original.product_carbon_footprint - suggested.product_carbon_footprint) /
+            original.product_carbon_footprint) * 100
+        );
+
+        productSuggestions.push({
+          suggestedID: suggested._id,
+          name: suggested.name,
+          price: suggested.price,
+          imgUrl: suggested.imgUrl,
+          description: suggested.description,
+          carbonFootprint: suggested.product_carbon_footprint,
+          reason: `This emits ${percentReduction}% less CO₂ than ${original.name}`,
+        });
+      }
+
+      if (productSuggestions.length > 0) {
+        suggestions.push({
+          forProduct: {
+            _id: original._id,
+            name: original.name,
+            imgUrl: original.imgUrl,
+          },
+          suggestions: productSuggestions,
+        });
+      }
+    }
+
+    res.status(200).json({
+      message: 'Item removed successfully',
+      cart: userOriginalCartItems,
+      suggestions,
+    });
+  } catch (err) {
+    console.error('Error removing product:', err);
+    res.status(500).json({ message: 'Error while removing item from cart' });
+  }
+});
+
+
+// routes for increase and decrease the items in the cart .
+
+// helper shared function for increasing and decreasing. 
+async function returnCartWithSuggestions(userID, res) {
+  const cart = await Cart.findOne({ userID }).populate('products.productID');
+
+  const userOriginalCartItems = [];
+  const suggestions = [];
+
+  for (const item of cart.products) {
+    const original = item.productID;
+
+    userOriginalCartItems.push({
+      _id: original._id,
+      name: original.name,
+      price: original.price,
+      quantity: item.quantity,
+      imgUrl: original.imgUrl,
+      description: original.description,
+      carbonFootprint: original.product_carbon_footprint,
+    });
+
+    const alternatives = await Product.find({
+      product_category: original.product_category,
+      _id: { $ne: original._id },
+      product_carbon_footprint: { $lt: original.product_carbon_footprint },
+    })
+      .sort({ product_carbon_footprint: 1 })
+      .limit(2);
+
+    const productSuggestions = [];
+
+    for (const suggested of alternatives) {
+      const percentReduction = Math.round(
+        ((original.product_carbon_footprint - suggested.product_carbon_footprint) /
+          original.product_carbon_footprint) * 100
+      );
+
+      productSuggestions.push({
+        suggestedID: suggested._id,
+        name: suggested.name,
+        price: suggested.price,
+        imgUrl: suggested.imgUrl,
+        description: suggested.description,
+        carbonFootprint: suggested.product_carbon_footprint,
+        reason: `This emits ${percentReduction}% less CO₂ than ${original.name}`,
+      });
+    }
+
+    if (productSuggestions.length > 0) {
+      suggestions.push({
+        forProduct: {
+          _id: original._id,
+          name: original.name,
+          imgUrl: original.imgUrl,
+        },
+        suggestions: productSuggestions,
+      });
+    }
+  }
+
+  res.status(200).json({
+    message: 'Cart updated successfully',
+    cart: userOriginalCartItems,
+    suggestions,
+  });
+}
+
+
+// increse route
+
+router.put('/increase', async (req, res) => {
+  const { userID, productID } = req.body;
+
+  try {
+    const cart = await Cart.findOne({ userID });
+    if (!cart) return res.status(404).json({ message: 'Cart not found' });
+
+    const item = cart.products.find(
+      (p) => p.productID.toString() === productID
+    );
+
+    if (item) {
+      item.quantity += 1;
+      await cart.save();
+    }
+
+    return await returnCartWithSuggestions(cart.userID, res);
+
+  } catch (err) {
+    console.error('Increase error:', err);
+    res.status(500).json({ message: 'Error increasing quantity' });
+  }
+});
+
+
+// decrease route
+
+router.put('/decrease', async (req, res) => {
+  const { userID, productID } = req.body;
+
+  try {
+    const cart = await Cart.findOne({ userID });
+    if (!cart) return res.status(404).json({ message: 'Cart not found' });
+
+    const item = cart.products.find(
+      (p) => p.productID.toString() === productID
+    );
+
+    if (item) {
+      item.quantity -= 1;
+      if (item.quantity <= 0) {
+        cart.products = cart.products.filter(
+          (p) => p.productID.toString() !== productID
+        );
+      }
+      await cart.save();
+    }
+
+    return await returnCartWithSuggestions(cart.userID, res);
+
+  } catch (err) {
+    console.error('Decrease error:', err);
+    res.status(500).json({ message: 'Error decreasing quantity' });
+  }
+});
+
+
 module.exports = router;
