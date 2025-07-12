@@ -1,21 +1,31 @@
 import React, { useState, useEffect } from "react";
+import { Routes, Route } from "react-router-dom";
 import Confetti from "react-confetti";
 import { useWindowSize } from "@react-hook/window-size";
 import { FiShoppingCart } from "react-icons/fi";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+// Components
 import CartDrawer from "./components/cartDrawer";
 import ProductCard from "./components/productCard";
-import CategoryTitle from "./components/categoryTitle"; // Category + emoji
+import CategoryTitle from "./components/categoryTitle";
+import SearchBar from "./components/search";
+import UserProfile from "./components/UserProfile";
+import Wishlist from "./components/WishList";
+import ProductDetail from "./components/productDetail";
 
 function App() {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState([]);
   const [showDrawer, setShowDrawer] = useState(false);
   const [showConfetti, setShowConfetti] = useState(false);
-  const [showFirstAddMsg, setShowFirstAddMsg] = useState(false); //  NEW
+  const [showFirstAddMsg, setShowFirstAddMsg] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
+  const [wishlist, setWishlist] = useState([]);
+  const [showWishlistPage, setShowWishlistPage] = useState(false);
   const [width, height] = useWindowSize();
+  const [discountThreshold, setDiscountThreshold] = useState(20);
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -30,7 +40,12 @@ function App() {
     fetchProducts();
   }, []);
 
-  const grouped = products.reduce((acc, product) => {
+  const filteredProducts = products.filter((product) =>
+    product.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    product.description?.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
+  const grouped = filteredProducts.reduce((acc, product) => {
     const category = product.product_category || "Uncategorized";
     if (!acc[category]) acc[category] = [];
     acc[category].push(product);
@@ -39,13 +54,12 @@ function App() {
 
   const addToCart = (product) => {
     const alreadyInCart = cart.find((item) => item._id === product._id);
-    
-    //  First add triggers message and confetti
+
     if (!alreadyInCart) {
       setShowConfetti(true);
       if (cart.length === 0) {
         setShowFirstAddMsg(true);
-        setTimeout(() => setShowFirstAddMsg(false), 4000); //  auto hide
+        setTimeout(() => setShowFirstAddMsg(false), 4000);
       }
     }
 
@@ -83,27 +97,37 @@ function App() {
     toast.warn("Item removed");
   };
 
+  const toggleWishlist = (product) => {
+    if (wishlist.find((item) => item._id === product._id)) {
+      setWishlist((prev) => prev.filter((item) => item._id !== product._id));
+      toast.info("Removed from wishlist");
+    } else {
+      setWishlist((prev) => [...prev, product]);
+      toast.success("Added to wishlist");
+    }
+  };
+
   const totalPrice = cart.reduce(
     (total, item) => total + item.price * item.quantity,
     0
   );
 
-  return (
+  const MainPage = () => (
     <div className="p-6 bg-gray-100 min-h-screen relative">
-      {/* 🎉 Confetti */}
       {showConfetti && <Confetti width={width} height={height} />}
 
-      {/*  Toast notifications */}
-      <ToastContainer position="top-right" autoClose={1500} />
-
-      {/*  First product message */}
       {showFirstAddMsg && (
         <div className="fixed top-20 left-1/2 transform -translate-x-1/2 bg-green-100 text-green-800 px-4 py-2 rounded shadow-lg z-50">
           You have added your first product to cart
         </div>
       )}
 
-      {/*  Cart Icon */}
+      <div className="absolute top-4 left-4 z-10">
+        <UserProfile
+          onWishlistClick={() => setShowWishlistPage((prev) => !prev)}
+        />
+      </div>
+
       <div className="absolute top-4 right-4 z-10">
         <button
           onClick={() => setShowDrawer(true)}
@@ -116,28 +140,37 @@ function App() {
         </button>
       </div>
 
-      {/*  App Title */}
       <h1 className="text-3xl font-bold mb-6 text-center text-gray-800">
-        WalmartSparathon
+        WalmartSparkathon
       </h1>
 
-      {/*  Products by Category */}
-      {Object.entries(grouped).map(([category, items]) => (
-        <div key={category} className="mb-10">
-          <CategoryTitle category={category} />
-          <div className="flex overflow-x-auto gap-4 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200 pb-2">
-            {items.map((product) => (
-              <ProductCard
-                key={product._id}
-                product={product}
-                addToCart={addToCart}
-              />
-            ))}
-          </div>
-        </div>
-      ))}
+      <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
 
-      {/*  Cart Drawer */}
+      {showWishlistPage ? (
+        <Wishlist
+          wishlist={wishlist}
+          addToCart={addToCart}
+          toggleWishlist={toggleWishlist}
+        />
+      ) : (
+        Object.entries(grouped).map(([category, items]) => (
+          <div key={category} className="mb-10">
+            <CategoryTitle category={category} />
+            <div className="flex overflow-x-auto gap-4 pb-2">
+              {items.map((product) => (
+                <ProductCard
+                  key={product._id}
+                  product={product}
+                  addToCart={addToCart}
+                  toggleWishlist={toggleWishlist}
+                  isWishlisted={wishlist.some((w) => w._id === product._id)}
+                />
+              ))}
+            </div>
+          </div>
+        ))
+      )}
+
       {showDrawer && (
         <CartDrawer
           cart={cart}
@@ -148,6 +181,30 @@ function App() {
         />
       )}
     </div>
+  );
+
+  return (
+    <>
+      {/* ✅ ToastContainer here makes toasts work globally */}
+      <ToastContainer position="top-right" autoClose={1500} />
+
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route
+          path="/product/:id"
+          element={
+            <ProductDetail
+              products={products}
+              addToCart={addToCart}
+              toggleWishlist={toggleWishlist}
+              wishlist={wishlist}
+              discountThreshold={discountThreshold}
+              setDiscountThreshold={setDiscountThreshold}
+            />
+          }
+        />
+      </Routes>
+    </>
   );
 }
 
