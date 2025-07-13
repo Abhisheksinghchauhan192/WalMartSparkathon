@@ -65,43 +65,37 @@ function ProductDetail({
         ← Back to Products
       </button>
 
-      <div className="bg-white rounded-xl shadow-lg p-8 max-w-4xl mx-auto space-y-6">
-        <motion.div
-          className="flex flex-col md:flex-row gap-8"
-          initial={{ y: 20 }}
-          animate={{ y: 0 }}
-        >
-          <img
-            src={product.image || "https://via.placeholder.com/300"}
-            alt={product.name}
-            className="w-full md:w-1/2 h-64 object-contain rounded-lg bg-gray-100"
-          />
-          <div className="flex-1">
-            <h2 className="text-3xl font-bold text-gray-800 mb-2">{product.name}</h2>
-            <p className="text-gray-600 mb-4">{product.description}</p>
-            <div className="flex items-center justify-between">
-              <p className="text-2xl font-semibold text-green-600">${product.price}</p>
-              <button
-                onClick={() => toggleWishlist(product)}
-                className={`px-4 py-2 rounded shadow text-white transition ${
-                  isWishlisted ? "bg-red-500" : "bg-yellow-500 hover:bg-yellow-600"
-                }`}
-              >
-                {isWishlisted ? "♥ In Wishlist" : "♡ Add to Wishlist"}
-              </button>
-            </div>
-            <button
-              onClick={() => addToCart(product)}
-              className="mt-4 w-full bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded transition"
-            >
-              Add to Cart
-            </button>
-          </div>
-        </motion.div>
+      <div className="bg-white rounded-lg shadow p-6 max-w-3xl mx-auto">
+        <h2 className="text-2xl font-bold mb-2 text-gray-800">{product.name}</h2>
+        <p className="text-gray-600 mb-4">{product.description}</p>
+        <img
+          src={product.imgUrl}
+          alt={product.name}
+          className="w-full object-cover rounded mb-4"
+        />
+        <div className="flex items-center justify-between">
+          <p className="text-xl font-semibold text-green-600">${product.price}</p>
+          <button
+            onClick={() => toggleWishlist(product)}
+            className={`px-4 py-2 rounded ${
+              isWishlisted ? "bg-red-500" : "bg-yellow-400"
+            } text-white hover:opacity-90`}
+          >
+            {isWishlisted ? "Remove from Wishlist" : "Add to Wishlist"}
+          </button>
+        </div>
 
-        {/* Discount Threshold */}
-        <div className="border-t pt-6">
-          <h3 className="text-lg font-semibold text-gray-800 mb-2">Set Discount Notification</h3>
+        <button
+          onClick={() => addToCart(product)}
+          className="mt-4 w-full bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded"
+        >
+          Add to Cart
+        </button>
+
+        <div className="mt-6 border-t pt-4">
+          <h3 className="text-lg font-semibold mb-2 text-gray-800">
+            Set Discount Notification
+          </h3>
           <p className="text-sm text-gray-600 mb-2">
             Enter a discount percentage. You’ll be notified when this product hits that discount.
           </p>

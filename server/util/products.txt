@@ -1,0 +1,101 @@
+[
+  {
+    "name": "DEELMO Men's Stylish Solid Satin Casual Shirt for Men Full Sleeves| Poly Satin Silk Shirt",
+    "product_category": "Fashion",
+    "product_sub_category": "Clothing",
+    "carbonFootprint": "200",
+    "price": "500",
+    "description": "\r\n    Fabric : Made With Satin Silk Fabric | Material: Poly Satin With soft finish and rich look, guaranteed shrinkage post washing. These DEELMO Shirts are reliability and durability to offer you men's lifestyle essentials that never go out of fashion\r\n    Style : Western | Closure Type : Button | Solid Formal Shirt for Men with button that will complement your look no matter what the occasion is.\r\n    Neck Style : Collared Neck | Sleeve Type : Full Sleeve | Size: S\r\n    Pattern : Solid | Color: Silver Grey\r\n    Wash Care : Machine Wash | Suitable for Formal , Business Work, Date, Party, Perfect gift for friends.\r\n",
+    "imgUrl": "https://m.media-amazon.com/images/I/61R1R+tsmLL._SX679_.jpg"
+  },
+  {
+    "name": "Leriya Fashion Stylish Co-ord Set for Women – Trendy Korean Summer Travel Outfit | Pajama Set For Women & Girl for Beach & Holiday Look",
+    "product_category": "Fashion",
+    "product_sub_category": "Clothing",
+    "carbonFootprint": "180",
+    "price": "499",
+    "description": "\r\n    Top and Bottom Fabric: Rayon Women Night dress || Pajama Set Color :- White\r\n    This set includes: 1 shirt with 1 Pant || Work : Printed || Neck Style:- resort collar neck\r\n    Color Declaration : There might be slight variation in the actual color of the product due to different screen resolutions.\r\n    Occasion: Traditional wear, Casual Wear, party wear, evening daily wear, Please Click On Brand Name \"Leriya Fashion\" For More Products.\r\n    Use our infographic size chart for your breathable and comfortable co-ord set for summer beach wear.\r\n",
+    "imgUrl": "https://m.media-amazon.com/images/I/71Bvq7V0CjL._SY741_.jpg"
+  },
+  {
+    "name": "MIRCHI FASHION Women's Chiffon Floral Printed Saree with Blouse Piece ",
+    "product_category": "Fashion",
+    "product_sub_category": "Clothing",
+    "carbonFootprint": "250",
+    "price": "800",
+    "description": "\r\n    Design :: Stylish Floral Leaf Printed Design\r\n    Fabric :: Saree - Chiffon | Blouse - Chiffon\r\n    Color :: Saree - Dark Lavender, Light Green, Coral | Blouse - Dark Lavender\r\n    Saree - 5.5Mtr, Blouse - 0.8Mtr (Need To Be Stitched As Per Size And Fit)\r\n    This saree is suitable to for a contemporary stylish look in normal occasions, family get together, regular or daily use, office or work wear or gifting to loved one\r\n",
+    "imgUrl": "https://m.media-amazon.com/images/I/918cAUDYelL._SY741_.jpg"
+  },
+  {
+    "name": " Leriya Fashion Summer Dress for Women | Short One Piece A-Line Midi Dress | Lightweight Vacation Wear & Daily Casual Outfit ",
+    "product_category": "Fashion",
+    "product_sub_category": "Clothing",
+    "carbonFootprint": "300",
+    "price": "700",
+    "description": "Versatile Occasions: Whether you're looking for a party wear dress for women , an office-ready outfit, or a relaxed look for beach wear, this one piece dress for women is perfect for western wear , summer outings, picnics, vacations, and more. It’s a must-have midi dress for women summer adventures or a standout birthday dress for women .",
+    "imgUrl": "https://m.media-amazon.com/images/I/61xNxv7jOOL._SY741_.jpg"
+  },
+  {
+    "name": " MIRCHI FASHION Women's Fancy Chiffon Floral Printed Saree with Blouse Piece ",
+    "product_category": "Fashion",
+    "product_sub_category": "Clothing",
+    "carbonFootprint": "300",
+    "price": "750",
+    "description": "\r\n    Design :: Elegant Floral Printed Saree With Shiny Satin Border\r\n    Fabric :: Saree - Chiffon | Blouse - Chiffon\r\n    Color :: Saree - Turquoise, Beige | Blouse - Turquoise\r\n    Saree - 5.5Mtr , Blouse - 0.8Mtr (Need To Be Stitched As Per Size And Fit)\r\n    This saree is suitable to get a contemporary stylish look in normal occasions,family get together,regular or daily use,office or work wear or gifting to loved one\r\n",
+    "imgUrl": "https://m.media-amazon.com/images/I/81ZD54z3roL._SY741_.jpg"
+  },
+  {
+    "name": " DEELMO Men's Casual Button Down Shirts Long Sleeve Linen Shirt Fashion Textured Beach Summer Shirt ",
+    "product_category": "Fashion",
+    "product_sub_category": "Clothing",
+    "carbonFootprint": "400",
+    "price": "900",
+    "description": "\r\n    【Premium Material】This mens button down shirt is made of premium textured fabric,which is breathable, lightweight,soft, skin-friendly,keeping you cool and comfortable in the summer.\r\n    【Unique Design】Mens casual shirts feature long sleeve,spread collar, solid color,slight vertical ribbing,relaxed fit,simple and fashion\r\n    【Various Outfits】Men linen shirts could be easy to match with linen shorts/pants, casual pants or shorts to create a simple but fashionable style.\r\n    【Occasions】Mens untucked shirts is a great choice for beach, wedding, vacation, cruises, tropical aloha theme, party, yoga, work or daily casual wear.Perfect great for all seasons, Just enjoy your vacation.\r\n    【Garment Care】: Machine washable. Please refer to the size chart before ordering.\r\n",
+    "imgUrl": "https://m.media-amazon.com/images/I/612YHoWBkIL._SX679_.jpg"
+  },
+  {
+    "name": " Sun Fashion And Lifestyle Women's Chanderi Stitched Printed Long Kurta Dupatta Sets for Women ",
+    "product_category": "Fashion",
+    "product_sub_category": "Clothing",
+    "carbonFootprint": "258",
+    "price": "500",
+    "description": "\r\n    Kurti Fabric - Chanderi | Perfect choice for Gifting your loved ones\r\n    Style - Straight with front split | Length - Calf Length | Sleeves - Elbow Sleeves |Work -Floral Printed\r\n    Kurti Size -L Bust Size - 40 in,Shoulder size - 15 in,Waist size-37 in,Hip size-42 in\r\n    Best for casual daily wear, office wear|Superior Qualtiy stitching\r\n    Product Color May Slightly Vary Due To Photographic Lighting Sources Or Your Monitor Settings\r\n",
+    "imgUrl": "https://m.media-amazon.com/images/I/51eCsW402SL._SY741_.jpg"
+  },
+  {
+    "name": " Leriya Fashion Women's Shirt Dress Knee Length Dress | Loose Fit | Button-Down | | 3/4 Sleeve | Summer Wear | Available in (Pack of 2 | Value Pack) ",
+    "product_category": "Fashion",
+    "product_sub_category": "Clothing",
+    "carbonFootprint": "389",
+    "price": "769",
+    "description": "\r\n    Fabric:- Rayon || Package Contain:- 1 Stylish Dress For Women || Neck:- Collare Neck || Top Sleeve:- Roll Tab Sleeve\r\n    Length:- Short Dress For Women || Print:- Plain Western Dress For Ladies || Patten:- Stylish Western Dress For Girls.\r\n    Occasion:- It's a regular, causal, fusion wear, style it with your favorite heels, shoes, accessories, and so on. Effortlessly fun makes even relaxing look stylish. Party wear, evening wear. This is the perfect mini dress for women.\r\n    Size:- Select as per your body requirement, To ensure that our garments fit you well, it is essential that you pick the correct size.\r\n    This fancy attractive western dress you wear for homes, vacations, shopping, college, together, holidays, special days, hangouts, clubs also regular wear. Western dresses are the perfect gifts for a birthday, Christmas, Valentine, anniversary, or unexpected surprise.\r\n",
+    "imgUrl": "https://m.media-amazon.com/images/I/51Q6gdK8LuL._SX679_.jpg"
+  },
+  {
+    "name": " Leriya Fashion Stylish Co-ord Set for Women – Trendy Korean Summer Travel Outfit | Pajama Set For Women & Girl for Beach & Holiday Look ",
+    "product_category": "Fashion",
+    "product_sub_category": "Clothing",
+    "carbonFootprint": "400",
+    "price": "678",
+    "description": "\r\n    Elegant Printed Design – Featuring intricate traditional prints, this co-ord set exudes charm and sophistication, making it a must-have for your wardrobe.\r\n    Premium Blend Fabric – Made from soft, breathable rayon to keep you comfortable all day long, perfect for any season.\r\n    Versatile & Trendy – Ideal for casual outings, festive gatherings, office wear, and even vacations. Style it with heels for an elegant look or flats for a relaxed vibe.\r\n    Trendy Co-Ord Set Design: This travel outfit for women features a loose-fitting top with half sleeves and matching shorts, adding a fashionable edge to traditional beachwear.\r\n    Perfect Fit and Practical Design: With an elastic waistband and convenient pockets, this shorts set provides a comfortable, practical fit, making it your go-to choice for lounging, casual outings, or sleeping in style.\r\n",
+    "imgUrl": "https://m.media-amazon.com/images/I/617qSKFrUEL._SY741_.jpg"
+  },
+  {
+    "name": " RAJESHWAR FASHION WITH RF Women's Woven Latest Georgette Saree with Lace and Blouse Material ",
+    "product_category": "Fashion",
+    "product_sub_category": "Clothing",
+    "carbonFootprint": "390",
+    "price": "1000",
+    "description": "\r\n    Saree Fabric: Georgette | Blouse Fabric: Georgette|Saree Work : Paisley Print + Woven Border : Blouse Work| Printed\r\n    Saree Length : 6.3 Mtr included Blouse Piece (5.5 Mtr Saree + 0.80 Mtr Blouse)\r\n    Soft Finished /Comfortable to wear/Synthetic\r\n    Occasion : Traditional Wear Saree recommended for Traditional Function, Party,Wedding ,daily wear and Family Functions\r\n    This Saree is Suitable For Get Just Stylish Festival,Evening Party ,Casual look in office or work, normal occasions, family get together, regular or daily Use or gifting to loved one\r\n",
+    "imgUrl": "https://m.media-amazon.com/images/I/41gEWYQmv2L._SY445_SX342_.jpg"
+  },
+  {
+    "name": " MAGGI 2-Minute Instant Noodles,Masala Noodles With Goodness Of Iron,Made With Choicest Quality Spices,Favourite Masala Taste, 840g Pouch (Pack of 12, 70 g each) ",
+    "product_category": "Grocery",
+    "product_sub_category": "Fast Food ",
+    "carbonFootprint": "300",
+    "price": "30",
+    "description": "\r\n    INSTANT MASALA NOODLES: Relish your favorite masala taste with MAGGI 2-Minute Instant Noodles\r\n    GOODNESS OF IRON: Each serving (70 g) of MAGGI Masala Noodles provides 15% of the daily iron requirement\r\n    FAVOURITE MASALA TASTE: MAGGI 2-Minute Masala Instant Noodles are made with the choicest quality spices\r\n    TRULY GOOD: Pick the truly good choice with MAGGI Masala Noodles\r\n    EASY TO PREPARE: MAGGI Noodles are easy to prepare\r\n",
+    "imgUrl": "https://m.media-amazon.com/images/I/815wZbQ5bGL._SL1500_.jpg"
+  }
+]
