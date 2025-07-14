@@ -34,7 +34,6 @@ const ProductSchema = mongoose.Schema(
     description: {
       type: String,
       required: true,
-      maxlength: 500,
     },
   },
   {

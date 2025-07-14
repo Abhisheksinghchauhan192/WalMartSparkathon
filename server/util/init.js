@@ -18,7 +18,7 @@ const connection = mongoose.connect(process.env.MONGO_URI).then(()=>{
 })
 
 // reading the json data from the file 
-const filePath = path.join(__dirname,"randomProductData.txt");
+const filePath = path.join(__dirname,"products.txt");
 const rawData = fs.readFileSync(filePath,'utf-8');
 const productData = JSON.parse(rawData);
 

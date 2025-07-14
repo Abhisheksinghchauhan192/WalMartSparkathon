@@ -21,7 +21,7 @@ const ProductCard = ({ product, addToCart, toggleWishlist, isWishlisted }) => {
 
       {/* Product Image */}
       <img
-        src={product.image}
+        src={product.imgUrl}
         alt={product.name}
         className="w-full h-36 object-contain mb-3"
       />
