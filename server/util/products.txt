@@ -3,7 +3,7 @@
     "name": "DEELMO Men's Stylish Solid Satin Casual Shirt for Men Full Sleeves| Poly Satin Silk Shirt",
     "product_category": "Fashion",
     "product_sub_category": "Clothing",
-    "carbonFootprint": "200",
+    "product_carbon_footprint": "200",
     "price": "500",
     "description": "\r\n    Fabric : Made With Satin Silk Fabric | Material: Poly Satin With soft finish and rich look, guaranteed shrinkage post washing. These DEELMO Shirts are reliability and durability to offer you men's lifestyle essentials that never go out of fashion\r\n    Style : Western | Closure Type : Button | Solid Formal Shirt for Men with button that will complement your look no matter what the occasion is.\r\n    Neck Style : Collared Neck | Sleeve Type : Full Sleeve | Size: S\r\n    Pattern : Solid | Color: Silver Grey\r\n    Wash Care : Machine Wash | Suitable for Formal , Business Work, Date, Party, Perfect gift for friends.\r\n",
     "imgUrl": "https://m.media-amazon.com/images/I/61R1R+tsmLL._SX679_.jpg"
@@ -12,7 +12,7 @@
     "name": "Leriya Fashion Stylish Co-ord Set for Women – Trendy Korean Summer Travel Outfit | Pajama Set For Women & Girl for Beach & Holiday Look",
     "product_category": "Fashion",
     "product_sub_category": "Clothing",
-    "carbonFootprint": "180",
+    "product_carbon_footprint": "180",
     "price": "499",
     "description": "\r\n    Top and Bottom Fabric: Rayon Women Night dress || Pajama Set Color :- White\r\n    This set includes: 1 shirt with 1 Pant || Work : Printed || Neck Style:- resort collar neck\r\n    Color Declaration : There might be slight variation in the actual color of the product due to different screen resolutions.\r\n    Occasion: Traditional wear, Casual Wear, party wear, evening daily wear, Please Click On Brand Name \"Leriya Fashion\" For More Products.\r\n    Use our infographic size chart for your breathable and comfortable co-ord set for summer beach wear.\r\n",
     "imgUrl": "https://m.media-amazon.com/images/I/71Bvq7V0CjL._SY741_.jpg"
@@ -21,7 +21,7 @@
     "name": "MIRCHI FASHION Women's Chiffon Floral Printed Saree with Blouse Piece ",
     "product_category": "Fashion",
     "product_sub_category": "Clothing",
-    "carbonFootprint": "250",
+    "product_carbon_footprint": "250",
     "price": "800",
     "description": "\r\n    Design :: Stylish Floral Leaf Printed Design\r\n    Fabric :: Saree - Chiffon | Blouse - Chiffon\r\n    Color :: Saree - Dark Lavender, Light Green, Coral | Blouse - Dark Lavender\r\n    Saree - 5.5Mtr, Blouse - 0.8Mtr (Need To Be Stitched As Per Size And Fit)\r\n    This saree is suitable to for a contemporary stylish look in normal occasions, family get together, regular or daily use, office or work wear or gifting to loved one\r\n",
     "imgUrl": "https://m.media-amazon.com/images/I/918cAUDYelL._SY741_.jpg"
@@ -30,7 +30,7 @@
     "name": " Leriya Fashion Summer Dress for Women | Short One Piece A-Line Midi Dress | Lightweight Vacation Wear & Daily Casual Outfit ",
     "product_category": "Fashion",
     "product_sub_category": "Clothing",
-    "carbonFootprint": "300",
+    "product_carbon_footprint": "300",
     "price": "700",
     "description": "Versatile Occasions: Whether you're looking for a party wear dress for women , an office-ready outfit, or a relaxed look for beach wear, this one piece dress for women is perfect for western wear , summer outings, picnics, vacations, and more. It’s a must-have midi dress for women summer adventures or a standout birthday dress for women .",
     "imgUrl": "https://m.media-amazon.com/images/I/61xNxv7jOOL._SY741_.jpg"
@@ -39,7 +39,7 @@
     "name": " MIRCHI FASHION Women's Fancy Chiffon Floral Printed Saree with Blouse Piece ",
     "product_category": "Fashion",
     "product_sub_category": "Clothing",
-    "carbonFootprint": "300",
+    "product_carbon_footprint": "300",
     "price": "750",
     "description": "\r\n    Design :: Elegant Floral Printed Saree With Shiny Satin Border\r\n    Fabric :: Saree - Chiffon | Blouse - Chiffon\r\n    Color :: Saree - Turquoise, Beige | Blouse - Turquoise\r\n    Saree - 5.5Mtr , Blouse - 0.8Mtr (Need To Be Stitched As Per Size And Fit)\r\n    This saree is suitable to get a contemporary stylish look in normal occasions,family get together,regular or daily use,office or work wear or gifting to loved one\r\n",
     "imgUrl": "https://m.media-amazon.com/images/I/81ZD54z3roL._SY741_.jpg"
@@ -48,7 +48,7 @@
     "name": " DEELMO Men's Casual Button Down Shirts Long Sleeve Linen Shirt Fashion Textured Beach Summer Shirt ",
     "product_category": "Fashion",
     "product_sub_category": "Clothing",
-    "carbonFootprint": "400",
+    "product_carbon_footprint": "400",
     "price": "900",
     "description": "\r\n    【Premium Material】This mens button down shirt is made of premium textured fabric,which is breathable, lightweight,soft, skin-friendly,keeping you cool and comfortable in the summer.\r\n    【Unique Design】Mens casual shirts feature long sleeve,spread collar, solid color,slight vertical ribbing,relaxed fit,simple and fashion\r\n    【Various Outfits】Men linen shirts could be easy to match with linen shorts/pants, casual pants or shorts to create a simple but fashionable style.\r\n    【Occasions】Mens untucked shirts is a great choice for beach, wedding, vacation, cruises, tropical aloha theme, party, yoga, work or daily casual wear.Perfect great for all seasons, Just enjoy your vacation.\r\n    【Garment Care】: Machine washable. Please refer to the size chart before ordering.\r\n",
     "imgUrl": "https://m.media-amazon.com/images/I/612YHoWBkIL._SX679_.jpg"
@@ -57,7 +57,7 @@
     "name": " Sun Fashion And Lifestyle Women's Chanderi Stitched Printed Long Kurta Dupatta Sets for Women ",
     "product_category": "Fashion",
     "product_sub_category": "Clothing",
-    "carbonFootprint": "258",
+    "product_carbon_footprint": "258",
     "price": "500",
     "description": "\r\n    Kurti Fabric - Chanderi | Perfect choice for Gifting your loved ones\r\n    Style - Straight with front split | Length - Calf Length | Sleeves - Elbow Sleeves |Work -Floral Printed\r\n    Kurti Size -L Bust Size - 40 in,Shoulder size - 15 in,Waist size-37 in,Hip size-42 in\r\n    Best for casual daily wear, office wear|Superior Qualtiy stitching\r\n    Product Color May Slightly Vary Due To Photographic Lighting Sources Or Your Monitor Settings\r\n",
     "imgUrl": "https://m.media-amazon.com/images/I/51eCsW402SL._SY741_.jpg"
@@ -66,7 +66,7 @@
     "name": " Leriya Fashion Women's Shirt Dress Knee Length Dress | Loose Fit | Button-Down | | 3/4 Sleeve | Summer Wear | Available in (Pack of 2 | Value Pack) ",
     "product_category": "Fashion",
     "product_sub_category": "Clothing",
-    "carbonFootprint": "389",
+    "product_carbon_footprint": "389",
     "price": "769",
     "description": "\r\n    Fabric:- Rayon || Package Contain:- 1 Stylish Dress For Women || Neck:- Collare Neck || Top Sleeve:- Roll Tab Sleeve\r\n    Length:- Short Dress For Women || Print:- Plain Western Dress For Ladies || Patten:- Stylish Western Dress For Girls.\r\n    Occasion:- It's a regular, causal, fusion wear, style it with your favorite heels, shoes, accessories, and so on. Effortlessly fun makes even relaxing look stylish. Party wear, evening wear. This is the perfect mini dress for women.\r\n    Size:- Select as per your body requirement, To ensure that our garments fit you well, it is essential that you pick the correct size.\r\n    This fancy attractive western dress you wear for homes, vacations, shopping, college, together, holidays, special days, hangouts, clubs also regular wear. Western dresses are the perfect gifts for a birthday, Christmas, Valentine, anniversary, or unexpected surprise.\r\n",
     "imgUrl": "https://m.media-amazon.com/images/I/51Q6gdK8LuL._SX679_.jpg"
@@ -75,7 +75,7 @@
     "name": " Leriya Fashion Stylish Co-ord Set for Women – Trendy Korean Summer Travel Outfit | Pajama Set For Women & Girl for Beach & Holiday Look ",
     "product_category": "Fashion",
     "product_sub_category": "Clothing",
-    "carbonFootprint": "400",
+    "product_carbon_footprint": "400",
     "price": "678",
     "description": "\r\n    Elegant Printed Design – Featuring intricate traditional prints, this co-ord set exudes charm and sophistication, making it a must-have for your wardrobe.\r\n    Premium Blend Fabric – Made from soft, breathable rayon to keep you comfortable all day long, perfect for any season.\r\n    Versatile & Trendy – Ideal for casual outings, festive gatherings, office wear, and even vacations. Style it with heels for an elegant look or flats for a relaxed vibe.\r\n    Trendy Co-Ord Set Design: This travel outfit for women features a loose-fitting top with half sleeves and matching shorts, adding a fashionable edge to traditional beachwear.\r\n    Perfect Fit and Practical Design: With an elastic waistband and convenient pockets, this shorts set provides a comfortable, practical fit, making it your go-to choice for lounging, casual outings, or sleeping in style.\r\n",
     "imgUrl": "https://m.media-amazon.com/images/I/617qSKFrUEL._SY741_.jpg"
@@ -84,7 +84,7 @@
     "name": " RAJESHWAR FASHION WITH RF Women's Woven Latest Georgette Saree with Lace and Blouse Material ",
     "product_category": "Fashion",
     "product_sub_category": "Clothing",
-    "carbonFootprint": "390",
+    "product_carbon_footprint": "390",
     "price": "1000",
     "description": "\r\n    Saree Fabric: Georgette | Blouse Fabric: Georgette|Saree Work : Paisley Print + Woven Border : Blouse Work| Printed\r\n    Saree Length : 6.3 Mtr included Blouse Piece (5.5 Mtr Saree + 0.80 Mtr Blouse)\r\n    Soft Finished /Comfortable to wear/Synthetic\r\n    Occasion : Traditional Wear Saree recommended for Traditional Function, Party,Wedding ,daily wear and Family Functions\r\n    This Saree is Suitable For Get Just Stylish Festival,Evening Party ,Casual look in office or work, normal occasions, family get together, regular or daily Use or gifting to loved one\r\n",
     "imgUrl": "https://m.media-amazon.com/images/I/41gEWYQmv2L._SY445_SX342_.jpg"
@@ -93,9 +93,153 @@
     "name": " MAGGI 2-Minute Instant Noodles,Masala Noodles With Goodness Of Iron,Made With Choicest Quality Spices,Favourite Masala Taste, 840g Pouch (Pack of 12, 70 g each) ",
     "product_category": "Grocery",
     "product_sub_category": "Fast Food ",
-    "carbonFootprint": "300",
+    "product_carbon_footprint": "300",
     "price": "30",
     "description": "\r\n    INSTANT MASALA NOODLES: Relish your favorite masala taste with MAGGI 2-Minute Instant Noodles\r\n    GOODNESS OF IRON: Each serving (70 g) of MAGGI Masala Noodles provides 15% of the daily iron requirement\r\n    FAVOURITE MASALA TASTE: MAGGI 2-Minute Masala Instant Noodles are made with the choicest quality spices\r\n    TRULY GOOD: Pick the truly good choice with MAGGI Masala Noodles\r\n    EASY TO PREPARE: MAGGI Noodles are easy to prepare\r\n",
     "imgUrl": "https://m.media-amazon.com/images/I/815wZbQ5bGL._SL1500_.jpg"
+  },
+  {
+    "name": " Amazon Brand - Vedaka Whole Cashews | 200 Gram | Grade W320 Kaju | Gluten-Free & Plant Based Protein | Firm Texture, Rich Taste | Regular-Sized, Non-Split | Healthy Snack ",
+    "product_category": "Grocery",
+    "product_sub_category": "nuts",
+    "product_carbon_footprint": "60",
+    "price": "400",
+    "description": " Quality assured - our products are rigorously tested against the industry's best quality standards\r\nVedaka popular whole cashews have a nutty flavour and a firm texture for a rich taste\r\nStore in a cool, dry place in an airtight container and preferably refrigerate after opening\r\nPacked in food safe material to retain freshness of cashews\r\nWw320 cashews high quality, regular-sized, non-damaged and non-split cashews that would produce 320 pieces per pound (453.59g)\r\nHygienically packed in a facility meeting food safety standards\r\nflavor_name: Whole Natural. ingredients: Cashews ",
+    "imgUrl": "https://m.media-amazon.com/images/I/71D96ykEFNL._SL1500_.jpg"
+  },
+  {
+    "name": " Kellogg's Chocos Moons & Stars, With Whole Grain, Source Of Fibre, High In Calcium & Protein, With 10 Essential Vitamins & Minerals, Breakfast Cereals, 1.2 Kg Pack ",
+    "product_category": "Grocery",
+    "product_sub_category": "Fast Food",
+    "product_carbon_footprint": "200",
+    "price": "345",
+    "description": "\r\n    Kellogg'2 Chocos Moons & Stars is a nourishing & solid breakfast for kids. It makes milk chocolaty and delicious\r\n    Kellogg's Chocos Moons & Stars has the goodness of Whole Grain & is source of Fibre. It is high in Calcium & Protein that is essential for your child's growing body.\r\n    Kellogg's Moons & Stars is enriched with 10 essential vitamins & minerals like Iron, Zinc, B Vitamins & Vitamin C for your active kids.\r\n    30g Kellogg's Chocos Moons & Stars + 200ml cow's milk provides 66% of the days RDA for Calcium and 31% of the days RDA for Protein\r\n    form_factor:powder\r\n    allergen_information:allergen_free\r\n    container_type:bag\r\n",
+    "imgUrl": "https://m.media-amazon.com/images/I/51vy147KPGL._SX300_SY300_QL70_ML2_.jpg"
+  },
+  {
+    "name": " Post Oreo O's Cocoa Flavoured Chocolate Cereal, 10.97 oz / 311 g",
+    "product_category": "Grocery",
+    "product_sub_category": "Biscuite",
+    "product_carbon_footprint": "300",
+    "price": "675",
+    "description": " Post Oreo o's cereal is a delicious way to start the morning. It features a rich cream and chocolate flavour that makes breakfast very sweet. This Post cereal has 120 calories per serving, which makes it easy to factor into a well balanced diet. Oreo cookie cereal has the safe flavour as the famous sandwich cookies, only with an extra crispy texture. This cereal is loaded with vitamin d and iron for added nutritional value. It also doesn't contain any saturated or trans fat. Just add milk to make a fast pick-me-up to help you get started in the morning. This cereal was brought back into production due to popular demand from fans. ",
+    "imgUrl": "https://m.media-amazon.com/images/I/71owNEpcPwL._SY342_.jpg"
+  },
+  {
+    "name": " Daawat Sehat/Rozana Basmati Rice Mini Mogra, 5kg ",
+    "product_category": "Grocery",
+    "product_sub_category": "Rice",
+    "product_carbon_footprint": "400",
+    "price": "600",
+    "description": "\r\n    Daawat Rozana\r\n    Country of Origin: India\r\n    Morga rice\r\n    Country of Origin: India\r\n    Daawat Rozana\r\n    Morga rice\r\n    material features:vegetarian\r\n    Fortified with Iron ,Vitamins and Folic Acid.\r\n",
+    "imgUrl": "https://m.media-amazon.com/images/I/61104IJYvoL._SL1000_.jpg"
+  },
+  {
+    "name": " Amazon Brand - Vedaka Sona Masoori Raw Rice, 5Kg, White ",
+    "product_category": "Grocery",
+    "product_sub_category": "Rice",
+    "product_carbon_footprint": "450",
+    "price": "300",
+    "description": "\r\n    Vedaka ensures the hygiene and quality of its products through meticulous packaging and rigorous laboratory testing, adhering to the food safety standards set by FSSAI\r\n    Unadulterated - No artificial colours and No added preservatives\r\n    Versatile Cooking: Excellent for plain rice, biryani, pulao, pongal, lemon rice, and more.\r\n    5 kg Value Pack: Economical and convenient for regular family use\r\n    Naturally Processed: Raw rice with minimal processing to retain its natural goodness.\r\n    Consistency in quality across the year\r\n    Amazon Brand Quality - Trusted Vedaka brand ensuring high-quality standards\r\n    Net weight: 5 kg\r\n",
+    "imgUrl": "https://m.media-amazon.com/images/I/71l100FwycL._SL1500_.jpg"
+  },
+  {
+    "name": " Amazon Brand - Vedaka Mixed Dal, 1kg ",
+    "product_category": "Grocery",
+    "product_sub_category": "Dal",
+    "product_carbon_footprint": "180",
+    "price": "445",
+    "description": "\r\n    Vedaka ensures the hygiene and quality of its Pulses through meticulous packaging and rigorous laboratory testing, adhering to the food safety standards set by FSSAI\r\n    Daily Need Products\r\n    Rich in Protein, No Additives\r\n    ALSO TRY: Try All Vedaka products which maintains Consistency in quality across the year\r\n",
+    "imgUrl": "https://m.media-amazon.com/images/I/714XcZdrpeL._SL1500_.jpg"
+  },
+  {
+    "name": " Tata Sampann Unpolished Urad Dal (Split), 1kg ",
+    "product_category": "Grocery",
+    "product_sub_category": "Dal",
+    "product_carbon_footprint": "209",
+    "price": "180",
+    "description": "\r\n    Tata I-Shakti Dal is now Tata Sampann\r\n    Unpolished White Urad Dal (Split)\r\n    Urad Dal is one of the richest sources of protein and Vitamin B\r\n    Country of Origin: India\r\n",
+    "imgUrl": "https://m.media-amazon.com/images/G/31/apparel/rcxgs/tile._CB483369979_.gif"
+  },
+  {
+    "name": " Classmate Premium 6 Subject Notebook - A4, Soft Cover, 300 Pages, Single Line ",
+    "product_category": "Stationery",
+    "product_sub_category": "Notebooks",
+    "product_carbon_footprint": "250",
+    "price": "300",
+    "description": "\r\n\r\n    Ideal for academic and personal use with 6 subject dividers for efficient organization.\r\n    302 pages of premium, elemental chlorine-free paper in 29.7cm x 21.0cm for smooth, long-lasting writing.\r\n    Durable spiral binding allows for easy page turning and a flat writing surface.\r\n    Lightweight and easy to carry, perfect for on-the-go note-taking.\r\n    Available in a variety of designs to suit your style.\r\n    Made with environmentally conscious materials.\r\n    Designed to meet the needs of college students and working professionals.\r\n",
+    "imgUrl": "https://m.media-amazon.com/images/I/61NUA0O7WTL._SL1100_.jpg"
+  },
+  {
+    "name": " Classmate Pulse Single Subject Spiral Notebook - Pack of 4 | Unruled | 200 Pages | 24.0cm x 18.0cm | Attractive Cover Designs | Soft Cover |Notebooks for College Students ",
+    "product_category": "Stationery",
+    "product_sub_category": "Notebooks",
+    "product_carbon_footprint": "400",
+    "price": "500",
+    "description": "\r\n    The cover design of the notebook is subject to change, it depends on stock availability\r\n    Unruled notebook, 200 pages, spiral binding, soft cover, 240mm x180mm\r\n    Classmate uses eco friendly and elemental chlorine free paper\r\n    This notebook consists of papers\r\n",
+    "imgUrl": "https://m.media-amazon.com/images/I/71NEMsKdpCL._SX522_.jpg"
+  },
+  {
+    "name": " Amazon Brand - Solimo Notebooks, Spiral-Bound, Lightweight, Vibrant Colours (A5, 100 Pages, 70 GSM, Set of 5) ",
+    "product_category": "Stationery",
+    "product_sub_category": "Notebooks",
+    "product_carbon_footprint": "550",
+    "price": "600",
+    "description": "olimo presents this set of five lightweight notebooks. These versatile books are suitable for use in the classroom or office, meeting a range of daily needs.\r\nEach notebook contains 100 ruled pages of 70 gsm.\r\nThe paper is smooth and easy to write on using any writing instrument, including fountain pens, without ink penetration.\r\nThe cover is made from plastic.\r\nThe books are spiral-bound, which allow you to open them flat on any surface.\r\nThese aesthetically pleasing notebooks come in vibrant colours.\r\nDimensions: A5 size; No. of pages: 100\r\nPackage contents: Pack of 5 notebooks ",
+    "imgUrl": "https://m.media-amazon.com/images/I/912+mfE2XBL._SL1500_.jpg"
+  },
+  {
+    "name": " amazon basics Metal Spiral Notebooks A5 Size 160 Sheet | High Bright Paper | Single Ruled | Thick Black Covers | Pack of 3 (Assorted Colours) ",
+    "product_category": "Stationery",
+    "product_sub_category": "Notebooks",
+    "product_carbon_footprint": "400",
+    "price": "400",
+    "description": "\r\n    Enhanced Paper Quality: High Bright natural shade paper offers enhanced quality for writing and drawing.\r\n    Single Ruled Pages: Enjoy 160 ruled inner pages per notebook, allowing for unrestricted creativity.\r\n    Generous Space: With thick black covers, the pack totals 480 pages, providing ample room for recording ideas.\r\n    Enhanced Design: Secure spiral binding prevents page loss and ensures a flat writing surface.\r\n    Versatile Utility: Suitable for diaries, travel journals, record books, and sketchbooks, catering to diverse needs.\r\n    Optimal Size: Each notebook measures 21x14 cm (5.5x8.2 inches), fitting conveniently into handbags or school bags.\r\n",
+    "imgUrl": "https://m.media-amazon.com/images/I/914N0r11EjL._SL1500_.jpg"
+  },
+  {
+    "name": " CLAPONE 3 Pieces A5 Spiral Notebook with Natural White 120 Plain Page 140 GSM Heavy Duty Paper for School, College, Office, Home Travel Writing Notebook, Journal, Sketchbook & Notepad Brown ",
+    "product_category": "Stationery",
+    "product_sub_category": "Notebooks",
+    "product_carbon_footprint": "350",
+    "price": "400",
+    "description": "📖 Durable A5 Hardcover Spiral Notebook – Featuring 120 plain pages of 140 GSM thick paper, this notebook prevents ink bleed-through, making it perfect for writing, sketching, and journaling. 📝 The hardcover design offers long-lasting durability, while the spiral binding allows for easy flipping and flat-lay writing. 🔄 Ideal for professionals, students, artists, and travelers, this notebook helps you capture ideas, notes, and creativity effortlessly in any setting.\r\n2️⃣ 📖 Versatile A5 Spiral Notebook – Crafted with high-quality 140 GSM paper, this notebook offers 120 smooth, plain pages for sketching, note-taking, and journaling. 📝 The sturdy hardcover protects your work, while the spiral binding ensures easy page turning and a comfortable writing experience. 🔄 Whether used for work, school, travel, or personal projects, this notebook is designed to be your go-to companion for creativity and organization.\r\n3️⃣ 📖 Professional-Grade A5 Notebook – This hardcover spiral-bound notebook is perfect for daily writing, drawing, and note-taking. 📝 The 140 GSM heavy-duty paper ensures a smooth, bleed-resistant surface, making it suitable for pens, markers, and pencils. 🔄 With 120 blank pages, it’s ideal for artists, students, and professionals who need a reliable and durable notebook for creative expression.\r\n4️⃣ 📖 High-Quality A5 Journal – Designed for versatility and durability, this notebook features 120 plain pages of 140 GSM thick paper, preventing ink smudging or ghosting. 📝 The hardcover design offers sturdy support, making it great for writing on the go. 🔄 The spiral binding ensures easy flipping and a flat writing surface, perfect for journaling, sketching, office work, or travel diaries.\r\n5️⃣ 📖 Multipurpose A5 Sketchbook & Notebook – Whether you're writing, doodling, or sketching, this 120-page, 140 GSM notebook provides a premium paper surface that handles ink smoothly without bleeding. 📝 Its hardcover design ensures durability, while the spiral binding makes page-turning effortless. 🔄 Ideal for artists, writers, students, and professionals, this notebook is perfect for capturing thoughts, notes, and creativity wherever you go. ",
+    "imgUrl": "https://m.media-amazon.com/images/I/71GhsI7TeZL._SL1500_.jpg"
+  },
+  {
+    "name": " Dekorly Artificial Potted Plants, 8 Pack Artificial Plastic Eucalyptus Plants Small Indoor Potted Houseplants, Small Faux Plants for Home Decor Bathroom Office Farmhouse (Set 0F 8) ",
+    "product_category": "Home",
+    "product_sub_category": "Decoration",
+    "product_carbon_footprint": "800",
+    "price": "500",
+    "description": "\r\n\r\n    Perfect decoration: Different kinds of artificial plants indoors, using a unique design. Place it anywhere, it blends into the scene and brings comfort, making you prefer to stay there.\r\n    Safe material: the fake plant is made of Quality plastic, realistic looking, straight and lush, the pot is covered with a layer of green grass, full of the feeling of nature.\r\n    No sunlight or water needed, artificial indoor plants do not wilt, change color and keep a fresh look in all seasons. It is the best choice for decoration for people who are busy and go out frequently.\r\n    Wide applications: the set of 8 small flower pots can be used for indoor and outdoor decoration, office, window sill, bathroom, kitchen, dressing table, bookshelf, etc. Create a simple bright and clean style.\r\n    Note: Fake plants have a little odor, just leave them in a ventilated environment for a period of time. Due to the packaging, the sheets will be squeezed, please comb the sheets to make them look more fluffy.\r\n",
+    "imgUrl": "https://m.media-amazon.com/images/I/8139T8YbdkL._SL1500_.jpg"
+  },
+  {
+    "name": " amazon basics Artificial Plants with Pot|Realistic Looking| Multi Variety |Durable Plastic | No Maintenance | Home Decor | Dimensions: 5 cm X 13 cm (Pack of 8) ",
+    "product_category": "Home",
+    "product_sub_category": "Decoration",
+    "product_carbon_footprint": "659",
+    "price": "800",
+    "description": "\r\n    Perfect Decoration: These artificial plants come in different styles, each designed to blend seamlessly into any decor, adding a cozy and natural touch to your home or office.\r\n    High-Quality Material: Made from durable plastic, these faux plants are realistic, lush, and vibrant. The pots are covered with a layer of green grass, enhancing their natural look.\r\n    Maintenance-Free: No upkeep or attention is needed for these plastic plants; they'll stay vibrant and fresh without fading. Just occasionally wipe them down with a damp cloth.\r\n    Versatile Use: Suitable for indoor and outdoor decoration, these potted plants can be placed on windowsills, desks, bookshelves, bathrooms, kitchens, and more, creating a bright and clean style.\r\n    Warm Notice: These plants may have a slight odour; it's recommended to leave them in a ventilated area before use. Due to packaging, the leaves might be slightly compressed—simply adjust them for the best display.\r\n    Product Dimensions : 5 cms X 13 cms\r\n",
+    "imgUrl": "https://m.media-amazon.com/images/I/710jjgj13jL._SL1500_.jpg"
+  },
+  {
+    "name": " Webelkart Premium Home Keys Wooden Key Holder (29 cm x 13.5 cm x 0.4 cm, Wood) 7 Hook - Decorative Items for Home Decor (Black) ",
+    "product_category": "Home",
+    "product_sub_category": "Decoration",
+    "product_carbon_footprint": "150",
+    "price": "200",
+    "description": "\r\n    Dimensions (Wxdxh) In Cms:- 29 Cm X 0.40 Cm X 13.50 Cm\r\n    Package Contains: 1 Unit Of Webelkart Wooden Key Holder, Material: Wooden, Color: Brown\r\n    Best For Home Decor by WebelKart\r\n    Ideal For Gifting Purposes, Decorative Items for Home decor\r\n",
+    "imgUrl": "https://m.media-amazon.com/images/I/81eil1Y4QpL._SL1500_.jpg"
+  },
+  {
+    "name": " REFULGIX 36 LED Pearl Bonsai Tree Lamp with Touch Switch | USB & Battery Operated Decorative Light for Home, Bedroom, Festival, Gift Use (Warm White, Pack of 1) ",
+    "product_category": "Home",
+    "product_sub_category": "Decoration",
+    "product_carbon_footprint": "350",
+    "price": "450",
+    "description": " 🔌 Dual Power Options – Supports USB power (cable included) or 3 AA batteries (not included) for flexible placement\r\n🖐️ Touch Switch Control – Turn the lamp on/off with a simple touch, combining ease and modern design\r\n🌿 DIY Adjustable Branches – Bendable branches allow you to shape the tree to match your decor style ",
+    "imgUrl": "https://m.media-amazon.com/images/I/71HHjFUPBYL._SL1500_.jpg"
   }
 ]

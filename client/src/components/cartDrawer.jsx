@@ -31,7 +31,7 @@ const CartDrawer = ({
             className="flex items-start gap-4 border-b pb-4 mb-4"
           >
             <img
-              src={item.image}
+              src={item.imgUrl}
               alt={item.name}
               className="w-16 h-16 object-contain flex-shrink-0"
             />
