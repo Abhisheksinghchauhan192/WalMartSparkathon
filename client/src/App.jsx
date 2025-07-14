@@ -12,7 +12,6 @@ import MainPage from "./components/MainPage";
 import CartPage from "./components/cartPage";
 import CheckoutPage from "./components/CheckOutPage";
 
-
 function App() {
   const FREE_SHIPPING_THRESHOLD = 50;
 
@@ -29,6 +28,7 @@ function App() {
   const [width, height] = useWindowSize();
   const navigate = useNavigate();
 
+  // Fetch all products
   useEffect(() => {
     const fetchProducts = async () => {
       try {
@@ -39,8 +39,32 @@ function App() {
         console.error("Failed to fetch products:", err);
       }
     };
+
     fetchProducts();
   }, []);
+
+  // Fetch cart when userName is set (e.g. after refresh)
+useEffect(() => {
+  const fetchCart = async () => {
+    if (!userName) return;
+
+    try {
+      const res = await fetch(`http://localhost:3000/cart/${userName}`);
+      const data = await res.json();
+
+      if (res.ok && Array.isArray(data.cart)) {
+        setCart(data.cart);
+      } else {
+        console.warn("Unexpected cart response", data);
+      }
+    } catch (err) {
+      console.error("Failed to fetch cart:", err);
+    }
+  };
+
+  fetchCart();
+}, [userName]);
+
 
   const handleUserContinue = (name) => {
     localStorage.setItem("userName", name);
@@ -89,6 +113,7 @@ function App() {
 
       if (response.ok) {
         toast.success("Added to cart");
+
         setCart((prevCart) => {
           const existing = prevCart.find((item) => item._id === product._id);
           if (existing) {
@@ -177,86 +202,82 @@ function App() {
     <>
       <ToastContainer position="top-right" autoClose={1500} />
       <Routes>
-  <Route
-    path="/"
-    element={
-      <MainPage
-        width={width}
-        height={height}
-        userName={userName}
-        cart={cart}
-        showDrawer={showDrawer}
-        setShowDrawer={setShowDrawer}
-        showConfetti={showConfetti}
-        searchQuery={searchQuery}
-        setSearchQuery={setSearchQuery}
-        showWishlistPage={showWishlistPage}
-        setShowWishlistPage={setShowWishlistPage}
-        grouped={grouped}
-        wishlist={wishlist}
-        toggleWishlist={toggleWishlist}
-        addToCart={addToCart}
-        updateQuantity={updateQuantity}
-        removeItem={removeItem}
-        totalPrice={totalPrice}
-        handleLogout={handleLogout}
-        navigate={navigate}
-      />
-    }
-  />
-  
-  <Route
-    path="/product/:id"
-    element={
-      <ProductDetail
-        products={products}
-        addToCart={addToCart}
-        toggleWishlist={toggleWishlist}
-        wishlist={wishlist}
-        discountThreshold={discountThreshold}
-        setDiscountThreshold={setDiscountThreshold}
-      />
-    }
-  />
+        <Route
+          path="/"
+          element={
+            <MainPage
+              width={width}
+              height={height}
+              userName={userName}
+              cart={cart}
+              showDrawer={showDrawer}
+              setShowDrawer={setShowDrawer}
+              showConfetti={showConfetti}
+              searchQuery={searchQuery}
+              setSearchQuery={setSearchQuery}
+              showWishlistPage={showWishlistPage}
+              setShowWishlistPage={setShowWishlistPage}
+              grouped={grouped}
+              wishlist={wishlist}
+              toggleWishlist={toggleWishlist}
+              addToCart={addToCart}
+              updateQuantity={updateQuantity}
+              removeItem={removeItem}
+              totalPrice={totalPrice}
+              handleLogout={handleLogout}
+              navigate={navigate}
+            />
+          }
+        />
 
-  <Route
-    path="/cart"
-    element={
-      <CartPage
-        cart={cart}
-        updateQuantity={updateQuantity}
-        removeItem={removeItem}
-        saveForLater={saveForLater}
-        savedItems={savedItems}
-        moveToCart={moveToCart}
-        totalPrice={totalPrice}
-        freeShippingThreshold={FREE_SHIPPING_THRESHOLD}
-      />
-    }
-  />
+        <Route
+          path="/product/:id"
+          element={
+            <ProductDetail
+              products={products}
+              addToCart={addToCart}
+              toggleWishlist={toggleWishlist}
+              wishlist={wishlist}
+              discountThreshold={discountThreshold}
+              setDiscountThreshold={setDiscountThreshold}
+            />
+          }
+        />
 
-  <Route
-    path="/checkout"
-    element={
-      <CheckoutPage
-        cart={cart}
-        wishlist={wishlist}
-        toggleWishlist={toggleWishlist}
-        totalPrice={totalPrice}
-        freeShippingThreshold={FREE_SHIPPING_THRESHOLD}
-      />
-    }
-  />
+        <Route
+          path="/cart"
+          element={
+            <CartPage
+              cart={cart}
+              updateQuantity={updateQuantity}
+              removeItem={removeItem}
+              saveForLater={saveForLater}
+              savedItems={savedItems}
+              moveToCart={moveToCart}
+              totalPrice={totalPrice}
+              freeShippingThreshold={FREE_SHIPPING_THRESHOLD}
+            />
+          }
+        />
 
-  <Route
-    path="/profile"
-    element={<UserDetailPage userName={userName} />}
-  />
-</Routes>
+        <Route
+          path="/checkout"
+          element={
+            <CheckoutPage
+              cart={cart}
+              wishlist={wishlist}
+              toggleWishlist={toggleWishlist}
+              totalPrice={totalPrice}
+              freeShippingThreshold={FREE_SHIPPING_THRESHOLD}
+            />
+          }
+        />
 
-
-
-
+        <Route
+          path="/profile"
+          element={<UserDetailPage userName={userName} />}
+        />
+      </Routes>
     </>
   );
 }
