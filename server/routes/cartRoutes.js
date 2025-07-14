@@ -5,16 +5,17 @@ const Product = require("../database/models/Product");
 
 // get cart route
 router.get("/:id", async (req, res) => {
-  // let's first find out the cart of the user
   const id = req.params.id;
+  console.log("Received request for user ID:", id); // Log 1
 
   try {
-    // Get the user's cart with product info populated
     const cart = await Cart.findOne({ userID: id }).populate(
       "products.productID"
     );
+    console.log("Cart found:", cart ? cart.toObject() : "No cart"); // Log 2
 
     if (!cart || cart.products.length === 0) {
+      console.log("Cart is empty or not found."); // Log 3
       return res.status(200).json({
         cart: [],
         suggestions: [],
@@ -22,18 +23,19 @@ router.get("/:id", async (req, res) => {
       });
     }
 
-    // now task is to build the suggestions array based on the user's Cart items.
-
-    // building the response that we have to return and the
-    // suggestion items for current cart items.
-
     const userOriginalCartItems = [];
     const suggestions = [];
 
     for (const item of cart.products) {
-      const original = item.productID;
+      // Check if productID was successfully populated
+      if (!item.productID) {
+        console.error("Product ID not populated for item:", item); // Log 4: Critical check
+        continue; // Skip this item if productID is null
+      }
 
-      // Push full original item data to cart
+      const original = item.productID;
+      console.log("Processing original product:", original.name, "ID:", original._id, "CF:", original.product_carbon_footprint); // Log 5
+
       userOriginalCartItems.push({
         _id: original._id,
         name: original.name,
@@ -45,6 +47,9 @@ router.get("/:id", async (req, res) => {
       });
 
       // Get 2 better alternatives
+      // Log the query being made
+      console.log("Searching for alternatives for category:", original.product_category, "and CF less than:", original.product_carbon_footprint); // Log 6
+
       const alternatives = await Product.find({
         product_category: original.product_category,
         _id: { $ne: original._id },
@@ -52,6 +57,8 @@ router.get("/:id", async (req, res) => {
       })
         .sort({ product_carbon_footprint: 1 })
         .limit(2);
+
+      console.log("Found alternatives:", alternatives.map(alt => ({name: alt.name, cf: alt.product_carbon_footprint}))); // Log 7
 
       const productSuggestions = [];
 
@@ -86,14 +93,18 @@ router.get("/:id", async (req, res) => {
       }
     }
 
+    console.log("Final cart items:", userOriginalCartItems); // Log 8
+    console.log("Final suggestions:", suggestions); // Log 9
+
     res.status(200).json({
       cart: userOriginalCartItems,
       suggestions,
     });
   } catch (err) {
+    console.error("Error in /:id route:", err); // Log 10: Crucial for catching unexpected errors
     return res
       .status(500)
-      .json({ message: "Error While Fetching the Cart Data" });
+      .json({ message: "Error While Fetching the Cart Data", error: err.message }); // Send error message for better debugging
   }
 });
 
